@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resenha de Filmes</h1>
+        <form id="resenhaForm">
+            <label for="addFilme" class="n">Nome do Filme:</label>
+            <input type="text" id="addFilme" placeholder="Nome do filme" required>
+
+            <label for="addAno" class="a">Ano de Lançamento:</label>
+            <input type="number" id="addAno" placeholder="Ano de lançamento" required>
+
+            <label for="addDiretor">Diretor:</label>
+            <input type="text" id="addDiretor" placeholder="Diretor" required>
+
+            <label for="addGenero">Gênero:</label>
+            <input type="text" id="addGenero" placeholder="Gênero" required>
+
+            <label for="addDuracao">Duração:</label>
+            <input type="text" id="addDuracao" placeholder="Duração" required>
+
+            <label for="addPais">País de Origem:</label>
+            <input type="text" id="addPais" placeholder="País de origem" required>
+
+            <label for="addResenha">Resenha:</label>
+            <textarea id="addResenha" placeholder="Comente aqui o que você achou!" required></textarea>
+
+            <label for="addAvaliacao" class="s">Avaliação:</label>
+            <input type="number" step="0.5" max="5" id="addAvaliacao" placeholder="Dê uma nota de 0 a 5" required>
+
+            <label for="addSinopse">Sinopse:</label>
+            <textarea id="addSinopse" placeholder="Sinopse" required></textarea>
+
+            <label for="addImg">URL do Pôster:</label>
+            <input type="url" id="addImg" placeholder="URL do pôster do filme" required>
+            
+            <button type="submit" id="add">Adicionar Resenha</button>
+        </form>
+
+        <ul id="resenhaFilmes"></ul>
+
+        <br/>
+        <button><a href="resenhas.html">Ver Resenhas Cadastradas</a></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
